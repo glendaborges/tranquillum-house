@@ -11,7 +11,7 @@ body{
                           "footer footer "
                           ;
     grid-template-columns: auto auto ;
-    grid-template-rows: 17vh 78vh 5vh;
+    grid-template-rows: 17vh 78vh 5vh ;
     background-image: url("img/background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -70,6 +70,7 @@ main section h1 {
 }
 
 footer{
+
     display: flex;
     grid-area: footer;
     background-color: rgba(58, 122, 124, 0.8);
@@ -77,16 +78,19 @@ footer{
     color: rgb(211, 224, 235);
     
 }
- 
-footer p{
+
+.footer{
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: 20px;
 }
-#icones img{
+
+ 
+.icones{
     display: flex;
-    align-self: center;
-    justify-content: flex-end;
+    justify-content: space-around;
+    
 }
 
 @media only screen and (max-width: 768px){
