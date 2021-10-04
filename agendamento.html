@@ -5,140 +5,139 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style2.css">
     <title>Tranquillum House</title>
 </head>
 
 <body>
-    <header>
-        <!-- Logo -->
-        <img src="img/Azul Lótus Massagem Logotipo (1).png" alt="logo">
+    <div class="header-nav">
+        <header>
+            <!-- logo -->
+            <img src="img/300px-removebg-preview.png" alt="logo">
+        </header>
         <nav>
-            <!-- aqui esta o menu de navegacao -->
+            <!-- Aqui é o menu de navegação -->
             <ul>
                 <li> <a href="index.html">Home</a></li>
                 <li><a href="servicos.html">Serviços</a></li>
                 <li><a href="agendamento.html">Agendamento</a></li>
             </ul>
         </nav>
-    </header>
-    <section>
-        <h2>Agendamento</h2>
-        <p>
-            Para maior organização e comodidade todos os tratamentos são agendados
-            previamente.
-            <br>
-            Em caso de atrasos no horário agendado, o prazo de tolerância é de no
-            máximo <u>30 minutos</u>,<br> para não prejudicar os próximos clientes.
-
-        </p>
-    </section>
-    <!-- Formulario de agendamento -->
-    <form>
-        <fieldset>
-            <legend>Agendamento</legend>
-            <p>
-                <!-- Caixa para o nome -->
-                <label for="nome">
-                    Nome:
-                </label>
-                <input type="text" id="name" placeholder="Digite seu nome">
-            </p>
-            <p>
-                <!-- Caixa para o telefone -->
-                <label for="telefone">
-                    Telefone:
-                </label>
-                <input type="number" id="telefone" placeholder="(xx) xxxxx-xxxx">
-            </p>
-            <p>
-                <!-- Caixa para a data  -->
-                <label for="data">
-                    Data:
-                </label>
-                <br>
-                <input type="date" id="dataNascimento">
-            </p>
-            <!-- Caixa para o horario -->
-            <p>
-                <label for="hora">
-                    Horário
-                </label>
-                <input type="time">
-            </p>
-            <!-- Caixa para o email -->
-            <p>
-                <label for="email">
-                    Email:
-                </label>
-                <input type="email">
-            </p>
-            <p>
-                <!-- Select para escolher o genero -->
-                <legend>Gênero</legend>
-                <select name="genero">
-                    <option selected disabled value="">Selecione uma Opção</option>
-                    <option id="f" name="genero" value="feminino">Feminino</option>
-                    <option id="m" name="genero" value="masculino">Masculino</option>
-                    <option id="outro" name="genero" value="outro">Outro</option>
-                    <option id="naoInf" name="genero" value="naoInformado">Prefiro não informar</option>
-                </select>
-            </p>
-            <fieldset>
-                <!-- Checkbox para escolher o pacote -->
-                <legend>Serviços</legend>
-                <label for="pacote1">
-                    Pacote 1
-                </label>
-                <input type="checkbox" id="pacote1">
-                <label for="pacote2">
-                    Pacote 2
-                </label>
-                <input type="checkbox" id="pacote2">
-
-                <label for="pacote3">
-                    Pacote 3
-                </label>
-                <input type="checkbox" id="pacote3">
-                <label for="pacote4">
-                    Pacote 4
-                </label>
-                <input type="checkbox" id="pacote4">
-
-                <label for="pacote5">
-                    Spa day para noivas
-                </label>
-                <input type="checkbox" id="pacote5">
-                <p>
-                    <label for="msg">
-                        Observações:
-                    </label>
-                    <br>
-                    <!-- Observacao -->
-                    <textarea name="msg" id="msg" cols="26" rows="10"
-                        placeholder="Deixe aqui as observações sobre o pacote solicitado  "></textarea>
-                </p>
-            </fieldset>
-            <br>
-            <!-- Autorização de envio promocionais -->
-            <legend><b>Deseja receber nossas promoções por email?</b></legend>
-            <input type="radio" name="opcoes" id="sim" value="sim"> Sim
-            <input type="radio" name="opcoes" id="nao" value="nao"> Não
-            <!-- Botoes de limpar e agendar -->
-            <br>
-            <br>
-            <input type="submit" value="Agendar">
-            <input type="reset" value="Limpar">
-        </fieldset>
-    </form>
+    </div>
+            <main class="main">
+                <section class="item">
+                    <p>
+                        Para maior organização e comodidade todos os tratamentos são agendados
+                        previamente. 
+                        Em caso de atrasos no horário agendado, o prazo de tolerância é de  no
+                        máximo <u>30 minutos</u>, para não prejudicar os próximos clientes.
+                    </p>
+                </section>
+                <!-- Formulario de agendamento -->
+                <div class="item2">
+                    <form>
+                    <fieldset>
+                        <legend>Agendamento</legend>
+                        <div class="input">
+                            <!-- Caixa para o nome -->
+                            <label for="nome">
+                                Nome:
+                            </label>
+                            <input type="text" id="name" placeholder="Digite seu nome">
+                        </div>
+                        <div class="input">
+                            <!-- Caixa para o telefone -->
+                            <label for="telefone">
+                                Telefone:
+                            </label>
+                            <input type="number" id="telefone" placeholder="(xx) xxxxx-xxxx">
+                        </div>
+                        <div class="input">
+                            <!-- Caixa para a data  -->
+                            <label for="data">
+                                Data:
+                            </label>
+                            <br>
+                            <input type="date" id="dataNascimento">
+                        </div>
+                        <!-- Caixa para o horario -->
+                        <div class="input">
+                            <label for="hora">
+                                Horário
+                            </label>
+                            <input type="time">
+                        </div>
+                        <!-- Caixa para o email -->
+                        <div class="input">
+                            <label for="email">
+                                Email:
+                            </label>
+                            <input type="email">
+                        </div>
+                        <div class="input">
+                            <!-- Select para escolher o genero -->
+                            <legend>Gênero</legend>
+                            <select name="genero">
+                                <option selected disabled value="">Selecione uma Opção</option>
+                                <option id="f" name="genero" value="feminino">Feminino</option>
+                                <option id="m" name="genero" value="masculino">Masculino</option>
+                                <option id="outro" name="genero" value="outro">Outro</option>
+                                <option id="naoInf" name="genero" value="naoInformado">Prefiro não informar</option>
+                            </select>
+                        </div>
+            
+                            <!-- Checkbox para escolher o pacote -->
+                            <legend>Serviços</legend>
+                            <label for="pacote1">
+                                Pacote 1
+                            </label>
+                            <input type="checkbox" id="pacote1">
+                            <label for="pacote2">
+                                Pacote 2
+                            </label>
+                            <input type="checkbox" id="pacote2">
+                            <label for="pacote3">
+                                Pacote 3
+                            </label>
+                            <input type="checkbox" id="pacote3">
+                            <label for="pacote4">
+                                Pacote 4
+                            </label>
+                            <input type="checkbox" id="pacote4">
+                            <label for="pacote5">
+                                Spa day para noivas
+                            </label>
+                            <input type="checkbox" id="pacote5">
+                           <!-- <div class="input">
+                                <label for="msg">
+                                    Observações:
+                                </label>
+                                <br> 
+                                Observacao
+                                 <textarea name="msg" id="msg" cols="26" rows="10"
+                                    placeholder="Deixe aqui as observações sobre o pacote solicitado  "></textarea>
+                            </div> -->
+           
+                        <!-- Autorização de envio promocionais -->
+                        <legend><b>Deseja receber nossas promoções por email?</b></legend>
+                        <input type="radio" name="opcoes" id="sim" value="sim"> Sim
+                        <input type="radio" name="opcoes" id="nao" value="nao"> Não
+                        <!-- Botoes de limpar e agendar -->
+                        <br>
+                        <br>
+                        <input type="submit" value="Agendar">
+                        <input type="reset" value="Limpar">
+                    </fieldset>
+                    </form>
+                </div>
+            </main>
     <!-- Aqui sao os icones das redes sociais  -->
-    <footer>
-        <a href="#">
-            <img src="img/fb_icon-icons.com_65434 (1).png" alt="icone do facebook">
-        </a>
-        <a href="#">
-            <img src="img/instagram_f_icon-icons.com_65485 (1).png" alt="icone do instagram">
-        </a>
+    <footer class="footer">
         <p>&copy 2021 Tranquillum House</p>
+        <a class="icone" href="#">
+            <img src="img/instagram.png" alt="">
+        </a>
+
     </footer>
 </body>
 

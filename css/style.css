@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
 }
+/* Estrutura de organização */
 body{
     height: 100%;
     display: grid;
@@ -11,8 +12,8 @@ body{
                           "footer footer "
                           ;
     grid-template-columns: auto auto ;
-    grid-template-rows: 17vh 78vh 5vh ;
-    background-image: url("img/background.jpg");
+    grid-template-rows: 25vh 70vh 5vh ;
+    background-image: url("../img/background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -20,20 +21,24 @@ body{
     font-family: 'Roboto', sans-serif;
     
 }
-
+/* Cabeçalho */
 header{
     grid-area: header;
+   
     
 }
+/* logo */
 header img{
     width: 280px;
     margin-left: 25px;
 }
+/* Menu de navegação */
 nav{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     grid-area: nav;
+   
   
 }
 nav ul {
@@ -53,8 +58,7 @@ nav ul li a:hover{
     color:#022450 ;
     font-weight: bold
 }
-
-
+/* Corpo do site */
 main{
     display: flex;
     justify-content: center;
@@ -68,7 +72,7 @@ main section h1 {
     text-align: center;
     padding: 15px;
 }
-
+/* rodapé */
 footer{
 
     display: flex;
