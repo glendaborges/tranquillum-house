@@ -13,12 +13,14 @@ body{
     font-family: 'Roboto', sans-serif;
     
 }
+/* navegação e header */
 .header-nav{
     display: flex;
     justify-content: space-between;
    
     
 }
+/* logo */
 header{
     width: 50%;
 
@@ -34,6 +36,7 @@ nav{
     width: 50%;
    
 }
+/* navegação */
 nav ul {
     display: flex;
     list-style: none;
@@ -51,10 +54,12 @@ nav ul li a:hover{
     color:#022450 ;
     font-weight: bold
 }
+/* alinhamento  da page de serviços */
 main{
     display: flex;
     justify-content: center;
 }
+/* grid com os pacotes da page de serviços */
 .grid-container {
     display: grid;
     grid-template-columns: 50vh 50vh;
@@ -81,32 +86,75 @@ main{
 .grid-item ul {
     list-style: none;
 }
-.main{
+/* Alinhamento da page de agendamento */
+.alinhamento{
     display: flex;
-    justify-content: space-between;
-    height: 68vh;
-    color: #1b3686;
-   
-}
-.item{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 30px;
-    width: 35%;
-    text-align: center;
-}
-.item2{
-    display: flex;
+    height: 67.8vh;
     justify-content: center;
-    padding: 20px;
-    width: 60%;
+    align-items: center;
+    padding: 15px;
+}
+.container{
+    max-width: 700px;
+    width: 100%;
+    background: #f3f8ff;
+    padding: 25px 25px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #a4a9b8;
+}
+.title{
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #022450;
+}
+/* Formulario da page de agendamento */
+form .container-input{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+form .container-input .input {
+width: 50%;
+padding: 10px;
 }
 
-fieldset{
-    padding: 20px;
-    background-color: rgba(151, 206, 206, 0.9);
+label{
+color: #022450;
+font-size: 1.2rem;
 }
+
+.input input {
+height: 30px;
+width: 100%;
+outline: none;
+border: none;
+border-radius: 5px;
+background-color: #6b737c81;
+
+}
+
+form .button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+    height: 30px;
+}
+form .button input{
+    width: 30%;
+    height: 100%;
+    border-radius: 5px;
+    background-color: #6b737c81;
+    color: #ffffff;
+    border: none;
+}
+
+input::placeholder{
+    color: rgb(230, 235, 240);
+}
+
+/* footer da page de agendamento e serviços */
 footer{
     height: 5vh;
     display: flex;
@@ -118,51 +166,66 @@ footer{
     color: rgb(211, 224, 235);
 }
 
+
 @media only screen and (max-width: 768px){
+    .header-nav{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
     header img{
-        width: 140px;
-        margin-left: 12px;
+        width: 40%;
+        margin-left: 10px;
+    }
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    nav{
+        width: 100%;
     }
     nav ul li a{
-        font-size: 0.8rem;
+        font-size: 100%;
         
     }
-    nav ul li:first-child{
-        margin-left: 35px;
+    nav ul li {
+        margin: 5px;
     }
+    /* pagina de agendamento */
+    .alinhamento{
+      height: 100vh;  
+    }
+    
+    .title{
+        font-size: 0.9rem;
+    }
+    label{
+        font-size: 0.8rem;
+    }
+    .input input{
+        height: 20px;
+    }
+    form .button{
+        height: 25px;
+    }
+    /* pagina de serviços */
     .grid-container {
         display: grid;
-        grid-template-columns: 52vh ;
-        grid-template-rows:  48vh;
-        margin-left: 35px;
+        grid-template-columns: 50vh ;
+        grid-template-rows: 55vh 55vh 55vh 55vh ;
+        margin-top: 20px;
         margin-bottom: 25px;
     }
     .main{
         display: flex;
         flex-direction: column;
-       
+        height: 100vh; 
         color: #1b3686; 
     }
-    .item{
-        margin-top: -20px;
-        width: 100%;
-        height: 15vh;
-        text-align: justify;
-        font-size: 0.5rem;
-    }
-    .item2{
-        width: 100%;
-         height: 63vh;
-        font-size: 0.8rem;
-        margin-top: -100px;
-        
-    }
-    form{
-       
-    }
-  
     footer{
         font-size: 0.8rem;
-       
+     
     }
 }

@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" />
     <link rel="stylesheet" href="css/style2.css">
-    <title>Tranquillum House</title>
+    <title>Document</title>
 </head>
 
 <body>
@@ -24,121 +25,67 @@
             </ul>
         </nav>
     </div>
-            <main class="main">
-                <section class="item">
-                    <p>
-                        Para maior organização e comodidade todos os tratamentos são agendados
-                        previamente. 
-                        Em caso de atrasos no horário agendado, o prazo de tolerância é de  no
-                        máximo <u>30 minutos</u>, para não prejudicar os próximos clientes.
-                    </p>
-                </section>
-                <!-- Formulario de agendamento -->
-                <div class="item2">
-                    <form>
-                    <fieldset>
-                        <legend>Agendamento</legend>
-                        <div class="input">
-                            <!-- Caixa para o nome -->
-                            <label for="nome">
-                                Nome:
-                            </label>
-                            <input type="text" id="name" placeholder="Digite seu nome">
-                        </div>
-                        <div class="input">
-                            <!-- Caixa para o telefone -->
-                            <label for="telefone">
-                                Telefone:
-                            </label>
-                            <input type="number" id="telefone" placeholder="(xx) xxxxx-xxxx">
-                        </div>
-                        <div class="input">
-                            <!-- Caixa para a data  -->
-                            <label for="data">
-                                Data:
-                            </label>
-                            <br>
-                            <input type="date" id="dataNascimento">
-                        </div>
-                        <!-- Caixa para o horario -->
-                        <div class="input">
-                            <label for="hora">
-                                Horário
-                            </label>
-                            <input type="time">
-                        </div>
-                        <!-- Caixa para o email -->
-                        <div class="input">
-                            <label for="email">
-                                Email:
-                            </label>
-                            <input type="email">
-                        </div>
-                        <div class="input">
-                            <!-- Select para escolher o genero -->
-                            <legend>Gênero</legend>
-                            <select name="genero">
-                                <option selected disabled value="">Selecione uma Opção</option>
-                                <option id="f" name="genero" value="feminino">Feminino</option>
-                                <option id="m" name="genero" value="masculino">Masculino</option>
-                                <option id="outro" name="genero" value="outro">Outro</option>
-                                <option id="naoInf" name="genero" value="naoInformado">Prefiro não informar</option>
-                            </select>
-                        </div>
-            
-                            <!-- Checkbox para escolher o pacote -->
-                            <legend>Serviços</legend>
-                            <label for="pacote1">
-                                Pacote 1
-                            </label>
-                            <input type="checkbox" id="pacote1">
-                            <label for="pacote2">
-                                Pacote 2
-                            </label>
-                            <input type="checkbox" id="pacote2">
-                            <label for="pacote3">
-                                Pacote 3
-                            </label>
-                            <input type="checkbox" id="pacote3">
-                            <label for="pacote4">
-                                Pacote 4
-                            </label>
-                            <input type="checkbox" id="pacote4">
-                            <label for="pacote5">
-                                Spa day para noivas
-                            </label>
-                            <input type="checkbox" id="pacote5">
-                           <!-- <div class="input">
-                                <label for="msg">
-                                    Observações:
-                                </label>
-                                <br> 
-                                Observacao
-                                 <textarea name="msg" id="msg" cols="26" rows="10"
-                                    placeholder="Deixe aqui as observações sobre o pacote solicitado  "></textarea>
-                            </div> -->
-           
-                        <!-- Autorização de envio promocionais -->
-                        <legend><b>Deseja receber nossas promoções por email?</b></legend>
-                        <input type="radio" name="opcoes" id="sim" value="sim"> Sim
-                        <input type="radio" name="opcoes" id="nao" value="nao"> Não
-                        <!-- Botoes de limpar e agendar -->
-                        <br>
-                        <br>
-                        <input type="submit" value="Agendar">
-                        <input type="reset" value="Limpar">
-                    </fieldset>
-                    </form>
+    <main class="alinhamento">
+        <div class="container">
+            <div class="title">
+                <h2>Agendamento</h2>
+            </div>
+            <!-- Formulario -->
+            <form action="#">
+                <div class="container-input">
+                    <div class="input">
+                        <!-- caixa do nome -->
+                        <label for="nome" class="titulo-input">
+                            Nome:
+                        </label>
+                        <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+                    </div>
+                    <!-- caixa da idade -->
+                    <div class="input">
+                        <label for="idade" class="titulo-input">
+                            Idade:
+                        </label>
+                        <input type="number" id="idade" name="idade" placeholder="Digite sua idade" required>
+                    </div>
+                    <!-- caixa do email -->
+                    <div class="input">
+                        <label for="email" class="titulo-input">
+                            Email:
+                        </label>
+                        <input type="email" id="email" name="email" placeholder="exemplo@mail.com" required>
+                    </div>
+                    <!-- caixa do telefone -->
+                    <div class="input">
+                        <label for="tel" class="titulo-input">
+                            Telefone:
+                        </label>
+                        <input type="tel" id="tel" name="tel" placeholder="(xx) x xxxx-xxxx" required>
+                    </div>
+                    <!-- caixa da data -->
+                    <div class="input">
+                        <label for="data" class="titulo-input">
+                            Data::
+                        </label>
+                        <input type="date" id="data" name="data" required>
+                    </div>
+                    <!-- caixa do serviços -->
+                    <div class="input">
+                        <label for="servico" class="titulo-input">Serviço:</label>
+                        <input type="text" id="servico" name="servico">
+                    </div>
                 </div>
-            </main>
-    <!-- Aqui sao os icones das redes sociais  -->
-    <footer class="footer">
+                <div class="button">
+                    <input type="submit" value="Agendar">
+                </div>
+            </form>
+        </div>
+    </main>
+     <!-- Aqui sao os icones das redes sociais  -->
+     <footer class="footer">
         <p>&copy 2021 Tranquillum House</p>
         <a class="icone" href="#">
             <img src="img/instagram.png" alt="">
         </a>
-
     </footer>
 </body>
-
 </html>
