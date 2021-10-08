@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
 *{
     box-sizing: border-box;
     margin: 0;
@@ -10,8 +11,9 @@ body{
     height: 100vh;
     background-image: url("../img/texturas/Slide5.JPG");
     background-size: cover;
-    font-family: 'Roboto', sans-serif;
-    
+    font-family: 'PT Sans', sans-serif;
+    /* font-family: 'Roboto', sans-serif;
+     */
 }
 /* navegação e header */
 .header-nav{
@@ -47,12 +49,13 @@ nav ul li {
 nav ul a{
     text-decoration: none;
     font-size: 1.3rem;
-    color: #1b3686;
+    color: #1f3b92;
     transition: 300ms;
+   
 }
 nav ul li a:hover{
     color:#022450 ;
-    font-weight: bold
+     font-weight: bold
 }
 /* alinhamento  da page de serviços */
 main{
@@ -100,7 +103,7 @@ main{
     background: #f3f8ff;
     padding: 25px 25px;
     border-radius: 10px;
-    box-shadow: 5px 5px 5px #a4a9b8;
+    box-shadow: 5px 5px 5px #939cb4;
 }
 .title{
     font-size: 1.2rem;
@@ -131,6 +134,7 @@ outline: none;
 border: none;
 border-radius: 5px;
 background-color: #6b737c81;
+padding: 10px;
 
 }
 
@@ -148,6 +152,8 @@ form .button input{
     background-color: #6b737c81;
     color: #ffffff;
     border: none;
+    cursor: pointer;
+    
 }
 
 input::placeholder{

@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
 *{
     margin: 0;
@@ -18,7 +19,8 @@ body{
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: 'PT Sans', sans-serif;
     
 }
 /* Cabeçalho */
@@ -51,8 +53,9 @@ nav ul li {
 nav ul li a{
     text-decoration: none;
     font-size: 1.3rem;
-    color: #1b3686;
+    color: #1f3b92;
     transition: 300ms;
+    font-weight: 300;
 }
 nav ul li a:hover{
     color:#022450 ;
