@@ -52,6 +52,7 @@
     }
     .input input{
         height: 20px;
+        padding: 13px;
     }
     form .button{
         height: 25px;
@@ -59,7 +60,7 @@
     /* pagina de serviços */
     .grid-container {
         display: grid;
-        grid-template-columns: 49.8vh ;
+        grid-template-columns: 47vh ;
         grid-template-rows: 50vh 50vh 50vh 50vh ;
         margin-top: 20px;
         margin-bottom: 25px;
