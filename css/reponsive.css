@@ -28,7 +28,7 @@
     #sobreNos{
         margin-top: 20px;
         font-size: 0.8rem;
-        height: 68.8vh; 
+        height: 74.3vh; 
     }
     h1{
         font-size: 1rem; 
@@ -55,7 +55,7 @@
     .grid-container {
         display: grid;
         grid-template-columns: 49.8vh ;
-        grid-template-rows: 45vh 45vh 45vh 45vh ;
+        grid-template-rows: 50vh 50vh 50vh 50vh ;
         margin-top: 20px;
         margin-bottom: 25px;
     }
