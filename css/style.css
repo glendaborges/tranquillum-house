@@ -1,48 +1,44 @@
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
 *{
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-/* Estrutura de organização */
+
 body{
-    height: 100%;
-    display: grid;
-    grid-template-areas: "header nav "
-                          "main main "
-                          "footer footer "
-                          ;
-    grid-template-columns: auto auto ;
-    grid-template-rows: 25vh 70vh 5vh ;
-    background-image: url("../img/background.jpg");
-    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    background-image: url("../img/texturas/Slide5.JPG");
     background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    /* font-family: 'Roboto', sans-serif; */
     font-family: 'PT Sans', sans-serif;
-    
+    /* font-family: 'Roboto', sans-serif;
+     */
 }
-/* Cabeçalho */
-header{
-    grid-area: header;
+/* navegação e header */
+.header-nav{
+    display: flex;
+    justify-content: space-between;
    
     
 }
 /* logo */
+header{
+    width: 50%;
+
+}
 header img{
-    width: 280px;
+    width: 250px;
     margin-left: 25px;
 }
-/* Menu de navegação */
 nav{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    grid-area: nav;
+    width: 50%;
    
-  
 }
+/* navegação */
 nav ul {
     display: flex;
     list-style: none;
@@ -50,79 +46,223 @@ nav ul {
 nav ul li {
     margin: 10px;
 }
-nav ul li a{
+nav ul a{
     text-decoration: none;
     font-size: 1.3rem;
     color: #1f3b92;
     transition: 300ms;
-    font-weight: 300;
+   
 }
 nav ul li a:hover{
     color:#022450 ;
-    font-weight: bold
+     font-weight: bold
 }
-/* Corpo do site */
+/* alinhamento da page index */
+#sobreNos{
+    display: flex;
+    height: 69.1vh;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    font-size: 1.3rem;
+    text-align: center;
+    color: #1b3686;
+    background-image: url("../img/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    box-shadow:  0px 1px 15px rgb(168, 170, 170), 0px -1px 15px rgb(169, 170, 170);
+}
+
+/* alinhamento  da page de serviços */
 main{
     display: flex;
     justify-content: center;
-    align-items: center;
-    grid-area: main;
-    font-size: 1.3rem;
-    color: #1b3686;
 }
-
-main section h1 {
+/* grid com os pacotes da page de serviços */
+.grid-container {
+    display: grid;
+    grid-template-columns: 50vh 50vh;
+    grid-template-rows: 42vh 42vh;
+    padding: 10px;
+    margin-bottom: 25px;
+    grid-gap: 2rem;
+}
+.grid-item {
+    background-color: rgba(253, 239, 239, 0.8);
+    box-shadow: 5px 5px 5px  rgb(179, 179, 171);
+    border-radius: 2%;
+    padding: 20px;
     text-align: center;
+    transition: 300ms;
+    color: #1b3686;
+  }
+
+  .grid-item:hover{
+    background-color: rgba(131, 156, 156, 0.8);
+    box-shadow: 5px 5px 5px  rgb(155, 155, 149);
+  }
+.grid-item p{
+    margin-top: 2px;
+    font-size: 0.8rem;
+}
+.grid-item ul {
+    list-style: none;
+    margin-top: 2px;
+    margin-bottom: 10px;
+}
+.grid-item ul  li:last-child{
+   
+    margin-bottom: 15px;
+}
+/* Alinhamento da page de agendamento */
+.alinhamento{
+    display: flex;
+    height: 69vh;
+    justify-content: center;
+    align-items: center;
     padding: 15px;
 }
-/* rodapé */
-footer{
-
-    display: flex;
-    grid-area: footer;
-    background-color: rgba(58, 122, 124, 0.8);
+.container{
+    max-width: 700px;
+    width: 100%;
+    background: #f3f8ff;
+    padding: 25px 25px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #939cb4;
+}
+.grid-item{
+   width: 47vh;
+}
+.title{
     font-size: 1.2rem;
-    color: rgb(211, 224, 235);
+    text-align: center;
+    margin-bottom: 20px;
+    color: #022450;
+}
+/* Formulario da page de agendamento */
+form .container-input{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+form .container-input .input {
+width: 50%;
+padding: 10px;
+}
+
+label{
+color: #022450;
+font-size: 1.2rem;
+}
+
+.input input {
+height: 30px;
+width: 100%;
+outline: none;
+border: none;
+border-radius: 5px;
+background-color: #6b737c81;
+padding: 10px;
+
+}
+
+form .button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+    height: 30px;
+}
+form .button input{
+    width: 30%;
+    height: 100%;
+    border-radius: 5px;
+    background-color: #6b737c81;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
     
 }
 
-.footer{
+input::placeholder{
+    color: rgb(230, 235, 240);
+}
+
+/* footer da page de agendamento e serviços */
+footer{
+    height: 5vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
+    background-color: rgba(58, 122, 124, 0.8);
+    font-size: 1.2rem;
+    color: rgb(211, 224, 235);
 }
 
- 
-.icones{
-    display: flex;
-    justify-content: space-around;
-    
-}
 
-@media only screen and (max-width: 768px){
+/* @media only screen and (max-width: 768px){
+    .header-nav{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; */
+    /* }
     header img{
-        width: 150px;
-        margin-left: 15px;
+        width: 40%;
+        margin-left: 10px;
+    }
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    nav{
+        width: 100%;
     }
     nav ul li a{
-        font-size: 0.8rem;
+        font-size: 100%;
         
     }
-    nav ul li:first-child{
-        margin-left: 25px;
+    nav ul li {
+        margin: 5px;
     }
-    main{
-        font-size: 0.8rem; 
-        align-items: flex-start;
-        margin-top: 15px;
+    /* pagina de agendamento */
+    /* .alinhamento{
+      height: 100vh;  
     }
-    main p {
-       padding: 10px;
-       text-align: center;
-
+    
+    .title{
+        font-size: 0.9rem;
+    }
+    label{
+        font-size: 0.8rem;
+    }
+    .input input{
+        height: 20px;
+    }
+    form .button{
+        height: 25px;
+    } */ 
+    /* pagina de serviços */
+    /* .grid-container {
+        display: grid;
+        grid-template-columns: 50vh ;
+        grid-template-rows: 50vh 50vh 50vh 50vh ;
+        margin-top: 20px;
+        margin-bottom: 25px;
+    }
+    .main{
+        display: flex;
+        flex-direction: column;
+        height: 100vh; 
+        color: #1b3686; 
     }
     footer{
         font-size: 0.8rem;
+     
     }
-}
+} 
+*/
