@@ -11,11 +11,6 @@
       src="https://kit.fontawesome.com/7c5f2ab1cd.js"
       crossorigin="anonymous"
     ></script>
-    <script
-      src="https://code.jquery.com/jquery-3.6.0.min.js"
-      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-      crossorigin="anonymous"
-    ></script>
 
     <title>Tranquillum House</title>
   </head>
@@ -25,22 +20,19 @@
 
     <div class="bg">
       <header class="header">
-        <a href="index.html"
-          ><img
-            src="img/logo-mobile-removebg-preview.png"
-            alt="logo"
-            class="header-logo"
+        <a href="#"
+          ><img src="img/logo.png" alt="logo" class="header-logo"
         /></a>
 
         <!-- Menu de navegacao -->
-        <div class="mobile-menu active">
+        <div id="mobile-menu">
           <i class="fas fa-bars"></i>
         </div>
-        <nav class="nav active">
-          <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="servicos.html">Serviços</a></li>
-            <li><a href="agendamento.html">Agendamento</a></li>
+        <nav id="nav">
+          <ul id="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#service">Services</a></li>
+            <li><a href="agendamento.html">Contact us</a></li>
           </ul>
         </nav>
       </header>
@@ -48,25 +40,53 @@
 
       <section class="about">
         <div class="about-text">
-          <h1>Bem-vindos ao SPA Tranquillum House!</h1>
+          <h1>WELCOME TO TRANQUILLUM SPA!</h1>
           <p>
-            Somos um Spa Urbano de referência no Brasil. Nosso é objetivo trazer
-            experiências únicas de relaxamento para os nossos clientes,
-            oferecendo os melhores tratamentos em relaxamento e bem-estar. Lorem
-            ipsum dolor sit amet consectetur, adipisicing elit. Ducimus aut
-            eligendi ipsa, doloremque non eius blanditiis delectus, eos ea
-            autem, sint rem fugit quam explicabo perspiciatis dolore esse facere
-            quibusdam.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde
+            maiores voluptas aperiam facere delectus quam distinctio explicabo,
+            ipsam numquam nam, aliquam rem, veritatis nihil odit vel quisquam!
+            vel. Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Ducimus aut eligendi ipsa, doloremque non eius blanditiis delectus,
+            eos ea autem, sint rem fugit quam explicabo perspiciatis dolore esse
+            facere quibusdam.
           </p>
         </div>
       </section>
     </div>
-    <section class="services"></section>
-    <section class="contact"></section>
-
-    <!-- Aqui sao os icones das redes sociais  -->
-    <footer class="footer"></footer>
-
+    <section class="service">
+      <h1>Services</h1>
+      <div class="service-container">
+        <div class="service-card" id="card-1">
+          <div class="service-card-title">
+            <h2>Massages</h2>
+          </div>
+        </div>
+        <div class="service-card" id="card-2">
+          <div class="service-card-title">
+            <h2>Aromatherapy</h2>
+          </div>
+        </div>
+        <div class="service-card" id="card-3">
+          <div class="service-card-title">
+            <h2>Skincare</h2>
+          </div>
+        </div>
+        <div class="service-card" id="card-4">
+          <div class="service-card-title">
+            <h2>Hydrotherapies</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contact">
+      <div class="contact-container">
+        <div class="contact-header">
+        </div>
+        <form action="#">
+        
+        </form>
+      </div>
+    </section>
     <script src="js/script.js"></script>
   </body>
 </html>

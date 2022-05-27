@@ -40,60 +40,60 @@ body ul {
     width: 75%;
   }
 }
-.header .mobile-menu {
+.header #mobile-menu {
   display: none;
+  color: #3a225c;
+  padding: 1rem;
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
 }
 @media (max-width: 768px) {
-  .header .mobile-menu {
+  .header #mobile-menu {
     display: block;
     z-index: 999;
   }
 }
-.header .nav {
+.header #nav {
   width: 50%;
 }
 @media (max-width: 768px) {
-  .header .nav {
+  .header #nav {
+    display: none;
     position: fixed;
     top: 0;
     right: 0;
     height: 100vh;
-    background-color: blue;
   }
 }
-.header .nav-links {
+.header #nav-links {
   display: flex;
   height: 100%;
   align-items: center;
   justify-content: center;
 }
-.header .nav-links li {
+.header #nav-links li {
   margin: 0 1.9rem;
   text-transform: uppercase;
   font-size: 1.2rem;
 }
-.header .nav-links a {
-  color: #4D4C7D;
+.header #nav-links a {
+  color: #3a225c;
   font-weight: 500;
   transition: 0.5ms ease;
 }
-@media (max-width: 768px) {
-  .header .nav-links a {
-    color: white;
-  }
-}
-.header .nav-links a:hover {
+.header #nav-links a:hover {
   font-weight: 600;
 }
 @media (max-width: 768px) {
-  .header .nav-links {
+  .header #nav-links {
     flex-direction: column;
     height: 35%;
     gap: 2rem;
   }
 }
-.header .nav.active {
-  background-color: pink;
+.header #nav.active {
+  display: block;
+  background-image: url("../img/bg.jpg");
 }
 
 .about {
@@ -126,8 +126,8 @@ body ul {
 .about h1 {
   text-transform: uppercase;
   font-size: 4rem;
-  margin-bottom: 1rem;
-  color: #4D4C7D;
+  margin: 2.5rem 0;
+  color: #3a225c;
 }
 @media (max-width: 1024px) {
   .about h1 {
@@ -164,6 +164,102 @@ body ul {
   .about p {
     text-align: justify;
   }
+}
+
+.service {
+  background-color: #FFF2F2;
+}
+.service h1 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 2.2rem;
+  color: #3a225c;
+}
+.service-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 2.5rem;
+}
+.service-card {
+  width: 350px;
+  height: 322px;
+  margin-bottom: 2rem;
+}
+.service-card-title {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: flex-end;
+  transition: 300ms ease;
+}
+.service-card h2 {
+  width: 100%;
+  padding: 0.5rem;
+  text-align: center;
+  color: #3a225c;
+  background: rgba(255, 255, 255, 0.35);
+  box-shadow: 0 8px 32px 0 rgba(169, 172, 210, 0.368627451);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+.service #card-1 {
+  background-image: url("../img/c1.png");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: 0.6s;
+}
+.service #card-1:hover {
+  background-size: 110%;
+}
+.service #card-2 {
+  background-image: url("../img/c2.png");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: 0.6s;
+}
+.service #card-2:hover {
+  background-size: 110%;
+}
+.service #card-3 {
+  background-image: url("../img/c3.png");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: 0.6s;
+}
+.service #card-3:hover {
+  background-size: 110%;
+}
+.service #card-4 {
+  background-image: url("../img/c4.png");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: 0.6s;
+}
+.service #card-4:hover {
+  background-size: 110%;
+}
+
+.contact {
+  background-image: url("../img/bg2.png");
+  background-position: center top;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact-container {
+  width: 40%;
+  height: 450px;
+  background-color: blue;
+  margin-top: 3rem;
+  padding: 2rem;
 }
 
 /*# sourceMappingURL=style.css.map */

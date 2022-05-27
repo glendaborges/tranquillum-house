@@ -6,7 +6,21 @@
 
 @mixin hover-text
     font-weight: 600
+    
+@mixin bg-img($img)
+    background-image: url('../img/#{$img}')
+    background-size: 100%
+    background-position: center
+    background-repeat: no-repeat
+    transition: .6s
 
+    &:hover
+        background-size: 110%
+        // filter: blur(2px)
+@mixin center
+     display: flex
+     align-items: center
+     justify-content: center
 @mixin mobile
     @media(max-width: 425px )
         @content

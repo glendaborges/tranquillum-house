@@ -34,20 +34,24 @@ body
         margin: 0 2rem
         @include mixins.tablet
             width: 75%
-    .mobile-menu  
+    #mobile-menu  
         display: none
+        color: variables.$primary-color
+        padding: 1rem
+        font-size: 1.5rem
+        margin-top: 1.5rem
         @include mixins.tablet
             display: block
             z-index: 999
 
-    .nav
+    #nav
         width: 50%
         @include mixins.tablet
+            display: none
             position: fixed
             top: 0
-            right: 0
+            right:  0
             height: 100vh
-            background-color: blue
         &-links
             display: flex
             height: 100%
@@ -62,16 +66,16 @@ body
                 color: variables.$primary-color
                 font-weight: 500
                 transition: 0.5ms ease
-                @include mixins.tablet
-                    color: white
                 &:hover
                     @include mixins.hover-text
             @include mixins.tablet
                 flex-direction: column
                 height: 35%
                 gap:2rem
-    .nav.active
-        background-color: pink
+    #nav.active
+        display: block
+        background-image: url('../img/bg.jpg')
+        
         
 
         
@@ -91,19 +95,19 @@ body
     h1
         text-transform: uppercase
         font-size: 4rem
-        margin-bottom: 1rem
+        margin: 2.5rem 0
         color: variables.$primary-color
         @include mixins.laptop
             margin-top: 7rem
             font-size: 3.4rem
         @include mixins.tablet
             font-size: 2.5rem
-            color: variables.$primary-color-mobile
+            color: variables.$primary-color
             text-align: center
         @include mixins.mobile
             font-size: 1.8rem
             text-align: center
-            color: variables.$primary-color-mobile
+            color: variables.$primary-color
             padding: .4rem
 
     p
@@ -115,3 +119,54 @@ body
         @include mixins.tablet
             text-align: justify
 
+.service
+    background-color: variables.$bg-color
+    h1
+        font-size: 2.5rem
+        text-transform: uppercase
+        text-align: center
+        padding: 2.2rem
+        color: variables.$primary-color
+    &-container
+        display: flex
+        justify-content: space-evenly
+        flex-wrap: wrap
+        padding: 2.5rem 
+          
+    &-card
+        width: 350px
+        height: 322px
+        margin-bottom: 2rem
+        &-title
+            height: 100%
+            @include mixins.center
+            align-items: flex-end
+            transition: 300ms ease
+            &:hover
+               
+        h2
+            width: 100%
+            padding: .5rem
+            text-align: center
+            color: variables.$primary-color
+            @include mixins.glassmorphism
+    #card-1
+        @include mixins.bg-img('c1.png')
+    #card-2
+        @include mixins.bg-img('c2.png')
+    #card-3
+        @include mixins.bg-img('c3.png')
+    #card-4
+        @include mixins.bg-img('c4.png')
+    
+.contact
+    background-image: url('../img/bg2.png')
+    background-position: center top
+    background-size: cover
+    @include mixins.center
+    &-container
+        width: 40%
+        height: 450px
+        background-color: blue
+        margin-top: 3rem
+        padding: 2rem
