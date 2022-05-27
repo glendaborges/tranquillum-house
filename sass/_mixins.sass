@@ -1,0 +1,22 @@
+@mixin glassmorphism
+    background: rgba( 255, 255, 255, 0.35 )
+    box-shadow: 0 8px 32px 0 #a9acd25e
+    backdrop-filter: blur( 4px )
+    -webkit-backdrop-filter: blur( 4px )
+
+@mixin hover-text
+    font-weight: 600
+
+@mixin mobile
+    @media(max-width: 425px )
+        @content
+
+@mixin tablet
+     @media(max-width: 768px )
+        @content
+
+@mixin laptop
+     @media(max-width: 1024px )
+        @content
+
+    

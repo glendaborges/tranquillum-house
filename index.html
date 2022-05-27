@@ -1,55 +1,72 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="img/favicon.ico" />
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/reponsive.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <script
+      src="https://kit.fontawesome.com/7c5f2ab1cd.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+
     <title>Tranquillum House</title>
-</head>
+  </head>
 
-<body>
-    
+  <body>
     <!-- Logo -->
-    <div class="header-nav">
-    <header>
-        <a href="index.html"><img src="img/300px-removebg-preview.png" alt="logo"></a>
-    </header>
-    <!-- Menu de navegacao -->
-    <nav>
-        <div class="navbar">
-            <ul>
-                <li> <a href="index.html">Home</a></li>
-                <li><a href="servicos.html">Serviços</a></li>
-                <li><a href="agendamento.html">Agendamento</a></li>
-            </ul>
+
+    <div class="bg">
+      <header class="header">
+        <a href="index.html"
+          ><img
+            src="img/logo-mobile-removebg-preview.png"
+            alt="logo"
+            class="header-logo"
+        /></a>
+
+        <!-- Menu de navegacao -->
+        <div class="mobile-menu active">
+          <i class="fas fa-bars"></i>
         </div>
-    </nav>
+        <nav class="nav active">
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="servicos.html">Serviços</a></li>
+            <li><a href="agendamento.html">Agendamento</a></li>
+          </ul>
+        </nav>
+      </header>
+      <!-- Sobre nos -->
+
+      <section class="about">
+        <div class="about-text">
+          <h1>Bem-vindos ao SPA Tranquillum House!</h1>
+          <p>
+            Somos um Spa Urbano de referência no Brasil. Nosso é objetivo trazer
+            experiências únicas de relaxamento para os nossos clientes,
+            oferecendo os melhores tratamentos em relaxamento e bem-estar. Lorem
+            ipsum dolor sit amet consectetur, adipisicing elit. Ducimus aut
+            eligendi ipsa, doloremque non eius blanditiis delectus, eos ea
+            autem, sint rem fugit quam explicabo perspiciatis dolore esse facere
+            quibusdam.
+          </p>
+        </div>
+      </section>
     </div>
-    <!-- Sobre nos -->
-    <main id="sobreNos">
-        <section>
-            <h1>Bem-vindos ao SPA Tranquillum House! </h1>
-            <p>
-                Somos um Spa Urbano de referência no Brasil. Nosso é objetivo trazer experiências únicas de relaxamento
-                <br>
-                para os nossos clientes, oferecendo os melhores tratamentos em relaxamento e bem-estar.
-            </p>
-        </section>
-    </main>
+    <section class="services"></section>
+    <section class="contact"></section>
+
     <!-- Aqui sao os icones das redes sociais  -->
-    <footer class="footer">
-            <p>&copy 2021 Tranquillum House</p>
-            <a  href="#">
-                <img src="img/instagram.png" alt="icone do instagram">
-            </a>
-    </footer>
+    <footer class="footer"></footer>
 
-
-
-</body>
-
+    <script src="js/script.js"></script>
+  </body>
 </html>

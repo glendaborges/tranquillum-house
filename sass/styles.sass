@@ -1,0 +1,117 @@
+@use  'mixins'
+@use 'variables'
+
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700')
+    
+*
+    font-family: "Quicksand", sans-serif
+    padding: 0
+    margin: 0
+
+body
+    a
+        text-decoration: none
+    ul
+        list-style: none
+
+.bg
+    width: 100%
+    background-image: url('../img/bg.jpg')
+    background-position: center top
+    background-size: cover
+
+
+.header
+    width: 100%
+    display: flex
+    justify-content: space-between
+    position: fixed
+    z-index: 999
+    top: 0
+    @include mixins.glassmorphism
+    &-logo
+        width: 55%
+        margin: 0 2rem
+        @include mixins.tablet
+            width: 75%
+    .mobile-menu  
+        display: none
+        @include mixins.tablet
+            display: block
+            z-index: 999
+
+    .nav
+        width: 50%
+        @include mixins.tablet
+            position: fixed
+            top: 0
+            right: 0
+            height: 100vh
+            background-color: blue
+        &-links
+            display: flex
+            height: 100%
+            align-items: center
+            justify-content: center
+    
+            li
+                margin: 0 1.9rem
+                text-transform: uppercase
+                font-size: 1.2rem
+            a
+                color: variables.$primary-color
+                font-weight: 500
+                transition: 0.5ms ease
+                @include mixins.tablet
+                    color: white
+                &:hover
+                    @include mixins.hover-text
+            @include mixins.tablet
+                flex-direction: column
+                height: 35%
+                gap:2rem
+    .nav.active
+        background-color: pink
+        
+
+        
+.about
+    display: flex
+    padding: 8rem
+    @include mixins.laptop
+        padding: 5rem
+    @include mixins.mobile
+        padding: 3rem
+    &-text
+        width: 50%
+        @include mixins.mobile
+            width: 100%
+        @include mixins.tablet
+            width: 100%
+    h1
+        text-transform: uppercase
+        font-size: 4rem
+        margin-bottom: 1rem
+        color: variables.$primary-color
+        @include mixins.laptop
+            margin-top: 7rem
+            font-size: 3.4rem
+        @include mixins.tablet
+            font-size: 2.5rem
+            color: variables.$primary-color-mobile
+            text-align: center
+        @include mixins.mobile
+            font-size: 1.8rem
+            text-align: center
+            color: variables.$primary-color-mobile
+            padding: .4rem
+
+    p
+        font-size: 1.4rem
+        @include mixins.mobile
+            font-size: 1.2rem
+            padding: 1rem
+            text-align: justify
+        @include mixins.tablet
+            text-align: justify
+
