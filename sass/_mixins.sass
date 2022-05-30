@@ -32,9 +32,17 @@
               margin-bottom: 1rem
               color: variables.$primary-color  
 
+@mixin box-footer
+    text-align: center
+    padding: 2rem
+    width: 33.33%
+
+@mixin box-footer-mobile
+    width: 80%
+
 
 @mixin mobile
-    @media(max-width: 425px )
+    @media(max-width: 493px )
         @content
 
 @mixin tablet

@@ -8,9 +8,21 @@
     padding: 0
     margin: 0
 
+*::-webkit-scrollbar 
+    width: 8px
+
+*::-webkit-scrollbar-track 
+    @include mixins.glassmorphism
+  
+
+*::-webkit-scrollbar-thumb 
+    background-color: #3e1849
+  
+
 body
     a
         text-decoration: none
+        color: black 
     ul
         list-style: none
 
@@ -19,6 +31,8 @@ body
     background-image: url('../img/bg.jpg')
     background-position: center top
     background-size: cover
+    @include mixins.tablet
+        background-position: left
 
 
 .header
@@ -65,7 +79,7 @@ body
             a
                 color: variables.$primary-color
                 font-weight: 500
-                transition: 0.5ms ease
+                transition: 300ms ease
                 &:hover
                     @include mixins.hover-text
             @include mixins.tablet
@@ -138,7 +152,7 @@ body
             @include mixins.center
             align-items: flex-end
             transition: 300ms ease
-            &:hover
+
                
         h2
             width: 100%
@@ -159,12 +173,14 @@ body
     background-image: url('../img/bg2.png')
     background-position: center top
     background-size: cover
-    padding-bottom: 3.5rem
+    padding-bottom: 3.8rem
     @include mixins.center
     &-container
         width: 50%
         height: 420px
         background-image: url('../img/bg2.png')
+        background-repeat: no-repeat
+        background-size: cover
         @include mixins.box-shadow  
         margin-top: 3rem
         @include mixins.tablet
@@ -180,7 +196,7 @@ body
 
         form
             width: 100%
-            height: 80%  
+            height: 75%  
             @include mixins.center
             flex-direction: column
             .input-group
@@ -196,6 +212,7 @@ body
                     font-size: 1.2rem
                     color: variables.$primary-color
                     background-color: variables.$bg-color
+                    outline: none
                 p
                     textarea
                         height: 100px
@@ -204,31 +221,61 @@ body
                         border: none 
                         font-size: 1.2rem
                         background-color: variables.$bg-color
+                        outline: none
             .submit-btn
                 width: 100%
                 text-align: center
                 button
+                    cursor: pointer
                     width: 45%
                     padding: .5rem
                     border: none
                     @include mixins.box-shadow
-                    background-color: variables.$bg-btn
+                    background-color: variables.$primary-color
                     color: white
                     font-size: 1.2rem
+                    text-transform: uppercase
+                    transition: 300ms ease
+                    &:hover
+                        background-color: variables.$bg-btn
 .footer
-    background-color: variables.$bg-footer 
+    background-color: variables.$bg-footer
+    hr
+        background-color: variables.$primary-color
     &-content
         display: flex
-        justify-content: space-evenly
-        &-about
-            padding: 2rem
+        justify-content: space-around
+        &-about,  &-adress,  &-links
+            @include mixins.box-footer
             h3
               @include mixins.text-footer
-            p
-              width: 50%
-              text-align: justify
+            @include mixins.mobile
+                width: 82%
+        @include mixins.mobile
+            flex-direction: column
         &-links
-            width: 50%
-            padding: 2rem
-            h3
-                @include mixins.text-footer
+            ul
+                li
+                    transition: 300ms ease
+                    &:hover
+                        text-decoration: underline
+    .social-content
+        display: flex
+        justify-content: space-between
+        align-items: center
+        padding: 1.4rem
+        @include mixins.mobile
+            flex-direction: column-reverse
+            text-align: center
+        &-icons
+           display: flex
+           gap: 1.8rem
+           padding: 1.4rem
+           li
+               font-size: 1.6rem
+               i
+                color: variables.$primary-color
+                transition: 300ms ease
+                &:hover
+                    color: variables.$bg-btn
+                    font-size: 1.8rem
